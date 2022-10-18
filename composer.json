@@ -1,0 +1,23 @@
+{
+    "name": "technica-lead/vendor-project-skeleton",
+    "description": "Vendor Project Skeleton",
+    "license": "Unlicense",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Robert Wąchal",
+            "email": "robert.wachal@technicalead.studio"
+        }
+    ],
+    "homepage": "https://github.com/technica-lead/vendor-project-skeleton",
+    "support": {
+        "issues": "https://github.com/technica-lead/vendor-project-skeleton/issues"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "rm -f .gitignore composer.json composer.lock",
+            "rm -f _template/.gitignore vpr/.gitignore",
+            "rm -rf vendor/"
+        ]
+    }
+}
