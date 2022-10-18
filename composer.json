@@ -15,9 +15,10 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "rm -f .gitignore composer.json composer.lock",
-            "rm -f _template/.gitignore vpr/.gitignore",
-            "rm -rf vendor/"
+            "rm -rf vendor/",
+            "rm -f .gitignore composer.json composer.lock UNLICENSE.txt",
+            "rm -f _template/.gitignore",
+            "rm -f vpr/.gitignore"
         ]
     }
 }
